@@ -44,7 +44,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
-    background-color: blue;
+    background-color: https://gifdb.com/images/high/shining-stars-in-dark-backdrop-rhpejo3vhjr1j0ns.gif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -58,7 +58,7 @@
     height: 150px;
     margin: 10px;
     border-radius: 15px;
-    background-color: https://gifdb.com/images/high/shining-stars-in-dark-backdrop-rhpejo3vhjr1j0ns.gif;
+    background-color: #ffffff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -90,7 +90,62 @@
         <div class="movie-title">ROBLOX</div>
     </div>
 
-  <!DOCTYPE html>
+        <!-- Add more movie divs with different URLs and titles -->
+
+    <script>
+        // Set the background image URL
+        var bgImageUrl = 'https://gifdb.com/images/high/shining-stars-in-dark-backdrop-rhpejo3vhjr1j0ns.gif';
+        document.body.style.backgroundImage = 'url(' + bgImageUrl + ')';
+        document.body.style.backgroundSize = 'cover';
+
+        // Function to open movies in fullscreen mode
+        function openMovie(url) {
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.id = 'movieFrame';
+            iframe.frameBorder = 0;
+            iframe.scrolling = 'no';
+            iframe.style.width = '100vw';
+            iframe.style.height = '100vh';
+            iframe.style.position = 'fixed';
+            iframe.style.top = 0;
+            iframe.style.left = 0;
+            iframe.style.zIndex = 1000;
+
+            document.body.appendChild(iframe);
+            iframe.requestFullscreen();
+        }
+
+        // Event listener for clicking on movie thumbnails
+        const movieThumbnails = document.querySelectorAll('.movie');
+        movieThumbnails.forEach((thumbnail) => {
+            thumbnail.addEventListener('click', () => {
+                const movieUrl = thumbnail.getAttribute('data-url');
+                openMovie(movieUrl);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -110,3 +165,8 @@
     <a id="github-link" href="https://github.com/FlixifyTVisbackformoregithub/G4M3HUB">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sNoQiIxejobnP-a5t0_Eq00jQsz5nnSXcMksWiIWpArMMUM:https://assets.stickpng.com/images/5847f98fcef1014c0b5e48c0.png&s" alt="GitHub">
     </a>
+</body>
+</html>
+
+</body>
+</html>
